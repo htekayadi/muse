@@ -41,4 +41,8 @@ Rails.application.configure do
 
   # Needed for Devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # Paperclip.options[:command_path] = 'C://windows/system32/convert'
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32\bin; C:\Program Files\ImageMagick-7.0.3-Q16'
+  Paperclip.options[:swallow_stderr] = false
 end
